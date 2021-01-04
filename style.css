@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+body {
+  background-image: url("background.jpg");
+  height: 100%;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+  width: 100vw;
+  height: 100vh;
+
+  grid-template-areas:
+    "SocialMedia . ."
+    "Websites MyClockDisplay ."
+    ". dailyTasks ."
+    ". longtermGoals .";
+}
+
+/* Setting Up Grid Areas */
+
+#SocialMedia {
+  grid-area: SocialMedia;
+  background-color: rgb(143, 143, 143, 0.3);
+  border-radius: 10px;
+}
+
+#MyClockDisplay {
+  grid-area: MyClockDisplay;
+  background-color: rgb(143, 143, 143, 0.3);
+  border-radius: 10px;
+}
+
+#Websites {
+  grid-area: Websites;
+  background-color: rgb(143, 143, 143, 0.3);
+  border-radius: 10px;
+}
+
+#dailyTasks {
+  grid-area: dailyTasks;
+  background-color: rgb(143, 143, 143, 0.3);
+  border-radius: 10px;
+}
+
+#dailyTasks ul {
+  list-style: none;
+}
+
+input[type="text"] {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  margin-left: 1%;
+}
+
+input[type="button"] {
+  font-family: "Montserrat", sans-serif;
+  padding: 5px;
+}
+
+#longtermGoals {
+  grid-area: longtermGoals;
+  background-color: rgb(143, 143, 143, 0.3);
+  border-radius: 10px;
+}
+
+/* Editing the Information in each grid area */
+.clock {
+  font-size: 8rem;
+  color: white;
+}

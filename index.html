@@ -1,10 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-  <!--<![endif]-->
+<html>
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,32 +11,32 @@
   <body>
     <div class="wrapper">
       <ul id="SocialMedia">
-        <li>Twitter</li>
-        <li>Instagram</li>
-        <li>LinkedIn</li>
-        <li>GitHub</li>
+        <li><img src="image (8).png" alt="linkedin"></li>
+        <li><img src="image (9).png" alt="linkedin"></li>
+        <li><img src="image (10).png" alt="linkedin"></li>
       </ul>
 
-      <ul id="Websites">
-        <li>Link1</li>
-        <li>Link2</li>
-        <li>Link3</li>
-      </ul>
+      <div id="Websites">
+        <h3>Useful Links</h3>
+        <input type="text" id="input3">
+        <input type="button" id="add3" style="background: url('whiteArrow.png'); background-size: 20px; background-repeat: no-repeat;">
+        <ul id="list3"></ul>
+      </div>
 
       <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
 
       <div id="dailyTasks">
         <h1>Daily Tasks</h1>
         <input type="text" id="input">
-        <input type="button" value="add to list" id="add">
+        <input type="button" id="add" style="background: url('whiteArrow.png'); background-size: 20px; background-repeat: no-repeat;">
         <ul id="list"></ul>
       </div>
 
       <div id="longtermGoals">
         <h1>Long Term Goals</h1>
-        <input type="text" id="input">
-        <input type="button" value="add to list" id="add">
-        <ul id="list"></ul></div>
+        <input type="text" id="input2">
+        <input type="button" id="add2" style="background: url('whiteArrow.png'); background-size: 20px; background-repeat: no-repeat;">
+        <ul id="list2"></ul></div>
     </div>
 
     <script src="script.js"></script>

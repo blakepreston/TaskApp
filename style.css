@@ -20,7 +20,7 @@ body {
   height: 100vh;
 
   grid-template-areas:
-    "SocialMedia . ."
+    "SocialMedia SocialMedia  ."
     "Websites MyClockDisplay ."
     ". dailyTasks ."
     ". longtermGoals .";
@@ -34,6 +34,16 @@ body {
   border-radius: 10px;
 }
 
+#SocialMedia li {
+  list-style: none;
+  display: inline-block;
+}
+
+#SocialMedia img {
+  height: 40px;
+  padding: 5px;
+}
+
 #MyClockDisplay {
   grid-area: MyClockDisplay;
   background-color: rgb(143, 143, 143, 0.3);
@@ -44,6 +54,14 @@ body {
   grid-area: Websites;
   background-color: rgb(143, 143, 143, 0.3);
   border-radius: 10px;
+}
+
+#Websites input[type="text"] {
+  width: 40%;
+}
+
+#Websites input[type="button"] {
+  width: 40%;
 }
 
 #dailyTasks {
@@ -65,7 +83,10 @@ input[type="text"] {
 
 input[type="button"] {
   font-family: "Montserrat", sans-serif;
-  padding: 5px;
+  padding-right: 15px;
+  padding-bottom: 3px;
+  background-color: transparent;
+  border: none;
 }
 
 #longtermGoals {

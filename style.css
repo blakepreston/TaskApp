@@ -20,13 +20,22 @@ body {
   height: 100vh;
 
   grid-template-areas:
-    "SocialMedia SocialMedia  ."
+    "SocialMedia SocialMedia  quote"
     "Websites MyClockDisplay ."
     ". dailyTasks ."
-    ". longtermGoals .";
+    ". longtermGoals weather";
 }
 
 /* Setting Up Grid Areas */
+#quote {
+  grid-area: quote;
+  margin: auto;
+}
+
+#weather {
+  grid-area: weather;
+  margin: auto;
+}
 
 #SocialMedia {
   grid-area: SocialMedia;
@@ -48,6 +57,7 @@ body {
   grid-area: MyClockDisplay;
   background-color: rgb(143, 143, 143, 0.3);
   border-radius: 10px;
+  margin: auto;
 }
 
 #Websites {
@@ -56,12 +66,14 @@ body {
   border-radius: 10px;
 }
 
+/**************************************************/
+
 #Websites input[type="text"] {
   width: 40%;
 }
 
 #Websites input[type="button"] {
-  width: 40%;
+  width: 10%;
 }
 
 #dailyTasks {
@@ -70,13 +82,24 @@ body {
   border-radius: 10px;
 }
 
-#dailyTasks ul {
+#dailyTasks,
+#Websites,
+ul {
   list-style: none;
 }
 
+#dailyTasks,
+#Websites,
+#longtermGoals input {
+  margin-left: 5%;
+}
+
 input[type="text"] {
+  font-family: "Montserrat", sans-serif;
+  color: white;
   background: transparent;
   border: none;
+  outline: none;
   border-bottom: 2px solid white;
   margin-left: 1%;
 }
@@ -93,6 +116,7 @@ input[type="button"] {
   grid-area: longtermGoals;
   background-color: rgb(143, 143, 143, 0.3);
   border-radius: 10px;
+  margin: auto;
 }
 
 /* Editing the Information in each grid area */

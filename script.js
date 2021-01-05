@@ -25,18 +25,21 @@ function showTime() {
 
 showTime();
 
-/***************************/
+/************Adding Elemements to Lists***************/
 
 document.getElementById("add").onclick = function(){
   //get the text to add to list
   var node = document.createElement("Li")
   var text = document.getElementById("input").value;
   var textnode = document.createTextNode(text);
+  var button = document.createElement("button");
+
+  button.innerHTML = "Delete";
 
   node.appendChild(textnode);
 
   //appendChild allows to add to the list
-  document.getElementById("list").appendChild(node);
+  document.getElementById("list").appendChild(node).appendChild(button);
 }
 
 document.getElementById("add2").onclick = function(){
@@ -44,11 +47,14 @@ document.getElementById("add2").onclick = function(){
   var node = document.createElement("Li")
   var text = document.getElementById("input2").value;
   var textnode = document.createTextNode(text);
+  var button = document.createElement("button");
+
+  button.innerHTML = "Delete";
 
   node.appendChild(textnode);
 
   //appendChild allows to add to the list
-  document.getElementById("list2").appendChild(node);
+  document.getElementById("list2").appendChild(node).appendChild(button);
 }
 
 document.getElementById("add3").onclick = function(){
@@ -56,9 +62,18 @@ document.getElementById("add3").onclick = function(){
   var node = document.createElement("Li")
   var text = document.getElementById("input3").value;
   var textnode = document.createTextNode(text);
+  var button = document.createElement("button");
+
+  button.innerHTML = "Delete";
 
   node.appendChild(textnode);
 
   //appendChild allows to add to the list
-  document.getElementById("list3").appendChild(node);
+  document.getElementById("list3").appendChild(node).appendChild(button);
+
+
 }
+
+
+/*********************************************************/
+

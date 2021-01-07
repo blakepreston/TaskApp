@@ -33,13 +33,41 @@ document.getElementById("add").onclick = function(){
   var text = document.getElementById("input").value;
   var textnode = document.createTextNode(text);
   var button = document.createElement("button");
+  var delButton = document.createElement("button");
 
-  button.innerHTML = "Delete";
+  button.style.background = 'transparent';
+  button.style.color = 'white';
+  button.style.border = '2px solid white'
+  button.style.borderRadius = '20px';
+  button.style.margin = '0% 1% 0% 35%';
+  button.style.outline = 'none';
+
+  delButton.style.background = 'transparent';
+  delButton.style.color = 'white';
+  delButton.style.border = '2px solid white'
+  delButton.style.borderRadius = '20px';
+  delButton.style.margin = '0% 1% 0% 1%';
+  button.style.outline = 'none';
+
+  button.innerHTML = "Cross Out";
+  delButton.innerHTML = "Delete"
 
   node.appendChild(textnode);
 
   //appendChild allows to add to the list
   document.getElementById("list").appendChild(node).appendChild(button);
+  document.getElementById("list").appendChild(node).appendChild(delButton);
+
+  
+
+  button.addEventListener('click', function(){
+    this.parentNode.style.textDecoration='line-through';
+  });
+
+  delButton.addEventListener('click', function(){
+    this.parentNode.remove();
+  });
+
 }
 
 document.getElementById("add2").onclick = function(){
@@ -48,13 +76,39 @@ document.getElementById("add2").onclick = function(){
   var text = document.getElementById("input2").value;
   var textnode = document.createTextNode(text);
   var button = document.createElement("button");
+  var delButton = document.createElement("button");
 
-  button.innerHTML = "Delete";
+  button.style.background = 'transparent';
+  button.style.color = 'white';
+  button.style.border = '2px solid white'
+  button.style.borderRadius = '20px';
+  button.style.margin = '0% 1% 0% 35%';
+  button.style.outline = 'none';
+
+  delButton.style.background = 'transparent';
+  delButton.style.color = 'white';
+  delButton.style.border = '2px solid white'
+  delButton.style.borderRadius = '20px';
+  delButton.style.margin = '0% 1% 0% 1%';
+  button.style.outline = 'none';
+
+  button.innerHTML = "Cross Out";
+  delButton.innerHTML = "Delete"
 
   node.appendChild(textnode);
 
   //appendChild allows to add to the list
   document.getElementById("list2").appendChild(node).appendChild(button);
+  document.getElementById("list2").appendChild(node).appendChild(delButton);
+
+  button.addEventListener('click', function(){
+    this.parentNode.style.textDecoration='line-through';
+  });
+
+  delButton.addEventListener('click', function(){
+    this.parentNode.remove();
+  });
+
 }
 
 document.getElementById("add3").onclick = function(){
@@ -63,17 +117,42 @@ document.getElementById("add3").onclick = function(){
   var text = document.getElementById("input3").value;
   var textnode = document.createTextNode(text);
   var button = document.createElement("button");
+  var delButton = document.createElement("button");
 
-  button.innerHTML = "Delete";
+  button.style.background = 'transparent';
+  button.style.color = 'white';
+  button.style.border = '2px solid white'
+  button.style.borderRadius = '20px';
+  button.style.margin = '0% 1% 0% 1%';
+  button.style.outline = 'none';
+
+  delButton.style.background = 'transparent';
+  delButton.style.color = 'white';
+  delButton.style.border = '2px solid white'
+  delButton.style.borderRadius = '20px';
+  delButton.style.margin = '0% 1% 0% 1%';
+  button.style.outline = 'none';
+
+  button.innerHTML = "Cross Out";
+  delButton.innerHTML = "Delete"
 
   node.appendChild(textnode);
 
   //appendChild allows to add to the list
   document.getElementById("list3").appendChild(node).appendChild(button);
+  document.getElementById("list3").appendChild(node).appendChild(delButton);
+
+
+  button.addEventListener('click', function(){
+    this.parentNode.style.textDecoration='line-through';
+  });
+
+  delButton.addEventListener('click', function(){
+    this.parentNode.remove();
+  });
 
 
 }
 
 
 /*********************************************************/
-
